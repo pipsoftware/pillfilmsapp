@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pill Films - Script Coverage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <script src="https://www.paypal.com/sdk/js?client-id=ASCeaS9qiFx4TJIjOVRttUrY30HPzSZf14WkLAOV4-onwLfpQ_fk87PAmNGVwDql_sFjzJLNidTVpbjQ&currency=USD"></script>
+  </head>
+
+  <body>
+    <nav>
+      <a href="/" class="logo-link">
+        <div class="logo-wrap">Pill Films</div>
+      </a>
+      <div class="nav-content fill">
+        <a href="/about-me" class="active">About me</a>
+        <a href="/script-coverage">Script Coverage</a>
+        <a href="/contact-me">Contact me</a>
+      </div>
+    </nav>
+
+    <div class="content">
+      <div class="form-wrap col">
+        <div class="form-title centered-text">Script Coverage</div>
+       
+
+        <div class="script-coverage-packages">
+          <form>
+            <input type="text" class="text-input" placeholder="First Name" />
+            <input type="text" class="text-input" placeholder="Last Name" />
+            <input type="email" class="text-input" placeholder="Email" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Log line"
+            ></textarea>
+
+            <div class="wrapper row">
+              <div class="row">
+                <label for="file-input" class="file-upload-row">
+                  <i class="fa fa-paperclip fa-2x"></i>
+                  <h2>Upload script</h2>
+                  <span class="file-span"></span>
+                </label>
+              </div>
+              <input type="file" id="file-input" />
+
+              <i class="fa fa-times-circle remove"></i>
+            </div>
+
+            <div style="width: 100%; text-align: center;">
+              <div class="package-info" id="package-info">
+              </div>
+              <div id="paypal-button-container"></div>
+            </div>
+
+            <!-- <div class="row">
+            <input type="submit" class="send-btn" value="Pay & Submit" />
+          </div> -->
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/script-coverage.js"></script>
+  </body>
+</html>

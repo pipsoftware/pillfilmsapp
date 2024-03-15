@@ -1,0 +1,61 @@
+/* Portrait and Landscape */
+ /* @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
+    }
+
+    .nav-content{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        justify-content: center;
+    }
+}  */
+
+
+
+/* Add this in your responsive.css file */
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) { /* Adjust the breakpoint as needed */
+    .logo-wrap {
+        width: 100%; /* Full width for smaller screens */
+        justify-content: center; /* Center logo */
+        margin-left: 0; /* Remove left margin */
+        text-align: center;
+    }
+
+    .name-line{
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .centered-text{
+        text-align: center;
+    }
+
+    .package-info{
+        margin: 20px 0;
+    }
+    nav {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Align items in the center */
+    }
+
+    .nav-content {
+        width: 100%; /* Full width for nav content */
+        flex-direction: column; /* Stack links vertically */
+        justify-content: center; /* Center links */
+        align-items: center;
+    }
+
+    .nav-content a {
+        margin: 10px 0; /* Add margin between links */
+    }
+}
+
